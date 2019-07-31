@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+<body>
+	<div class="container">
+
+		 
+		<textarea id="mytext"></textarea>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="btn btn-danger btn-lg"  onclick = "start();">Speak</div>
+			</div>
+			<div class="col-sm-6"></div>
+			<div class="col-sm-2">
+				<div class="btn btn-danger btn-lg" style="margin-left:75px;" onclick = "recognition.stop();">Stop</div>
+			</div>
+		</div>
+	<label>
+  <span>Language</span>
+  <select  id="language" >
+  <option selected="">Please Select</option>
+  <option value="1">English</option>
+  <option value="2">Hindi</option>
+  <option value="3">Bengali</option>
+</select>
+</label>
+		<label>
+			<span>Voice</span>
+			<select id="voiceOptions"></select>
+		</label>
+		<label>
+			<span>Volume</span>
+			<input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.1">
+		</label>
+		<label>
+			<span>Rate</span>
+			<input type="range" id="rateSlider" min="0" max="1" value="0.5" step="0.1">
+		</label>
+		<label>
+			<span>Pitch</span>
+			<input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0.1">
+		</label>
+		<div class="btn btn-lg btn-danger" onclick="speak()">Listen</div>
+	</div>
+	
+<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

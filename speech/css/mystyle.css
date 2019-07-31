@@ -1,0 +1,52 @@
+body{
+			background: #f6f6f6;
+		}
+		.container{
+			background: #f6f6f6;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 400px;
+			padding: 20px;
+			box-shadow: 0 0 10px 0 #ccc; 
+			background-color: #99ff99;
+			height: 600px;
+		}
+		.container textarea{
+			width: 1110px;
+			height: 200px;
+			resize: none;
+			outline: none;
+			border: 1px solid #ccc;
+
+		}
+		.container label{
+			display: block;
+			width: 400px;
+		}
+		.container label span{
+			width: 100px;
+			margin-top: 20px;
+			display: inline-block;
+		}
+		.container label select, .container label input{
+			width: 290px;
+		}
+		.button{
+			display: inline-block;
+			background: #f6f6f6;
+			padding: 10px 20px;
+			color: #000;
+			border: 1px solid#ccc;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+		.button:hover{
+			box-shadow: 4px  4px 10px 0 #ccc;
+		}
+		.text{
+			width: 1200px;
+			height: 300px;
+			border: 2px solid black;
+		}
